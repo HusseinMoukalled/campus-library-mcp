@@ -1,0 +1,10 @@
+[
+  {"book_id":"B001","title":"Practical Python","author":"Maya Haddad","topics":["python","programming"],"copies":2},
+  {"book_id":"B002","title":"Async Python Patterns","author":"Omar Nassar","topics":["python","async","programming"],"copies":1},
+  {"book_id":"B003","title":"Agentic Systems Foundations","author":"Lina Saleh","topics":["agents","ai","mcp"],"copies":2},
+  {"book_id":"B004","title":"Designing Reliable Agent Tools","author":"Karim Mansour","topics":["agents","ai","mcp","tools"],"copies":1},
+  {"book_id":"B005","title":"Database Design Essentials","author":"Nour Farah","topics":["databases","sql"],"copies":2},
+  {"book_id":"B006","title":"Introduction to Robotics","author":"Rami Khalil","topics":["robotics","control"],"copies":0},
+  {"book_id":"B007","title":"Distributed Systems in Practice","author":"Sara Younes","topics":["distributed","systems","networks"],"copies":1},
+  {"book_id":"B008","title":"Machine Learning Workshop","author":"Jad Abboud","topics":["machine learning","ai","statistics"],"copies":2}
+]

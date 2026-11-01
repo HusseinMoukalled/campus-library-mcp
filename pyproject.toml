@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "campus-library-mcp"
+version = "1.0.0"
+description = "Three focused FastMCP tools connected to a Gemini-powered OpenAI Agents SDK host"
+requires-python = ">=3.11"
+dependencies = ["fastmcp>=4.1.4,<5", "openai-agents>=0.24,<1", "python-dotenv>=1", "rich>=14"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-asyncio>=1", "ruff>=0.12"]
+
+[project.scripts]
+library-agent = "campus_library.agent:main"
+library-server = "campus_library.server:main"
+library-check = "campus_library.check:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+campus_library = ["catalog.json"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
